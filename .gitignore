@@ -1,0 +1,30 @@
+# Dépendances
+node_modules/
+
+# Builds
+dist/
+
+# Variables d'environnement (privé)
+.env
+.env.*
+!.env.example
+admin/.env
+admin/.env.*
+!admin/.env.example
+.dev.vars
+
+# État local des outils (contient des infos de compte)
+.wrangler/
+.vercel/
+
+# Sauvegardes / exports de base de données (données clients)
+backup_*.sql
+*.sql.backup
+
+# Notes internes / contexte privé
+HANDOFF.md
+
+# Système / éditeurs
+.DS_Store
+Thumbs.db
+*.log

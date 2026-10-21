@@ -1,0 +1,17 @@
+{
+  "name": "amazigh-backend",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker Backend for Amazigh Luxury Perfumes with D1 and R2",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:init": "wrangler d1 execute amazigh-db --remote --file=schema.sql -y",
+    "db:seed": "wrangler d1 execute amazigh-db --remote --file=seed.sql -y"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261019.1",
+    "typescript": "^5.7.3",
+    "wrangler": "^4.114.0"
+  }
+}
